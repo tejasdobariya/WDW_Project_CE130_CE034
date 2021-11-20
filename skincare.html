@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Skin Care</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5d56134312.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/product_slider.css" />
+    <link rel="stylesheet" href="css/lightslider.css">
+    <script type="text/javascript" src="javascript/jquery.js"></script>
+    <script type="text/javascript" src="javascript/lightslider.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap');
+
+        * {
+            font-family: 'M PLUS 1', sans-serif;
+        }
+
+        .navbar body {
+            background-color: #0a1e29;
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar nav {
+            width: 100vw;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .navbar li {
+            position: relative;
+            padding: 0 10px;
+            height: 100%;
+            display: flex;
+        }
+
+        .navbar a {
+            z-index: 1;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            padding: 10px 5px;
+        }
+
+        .navbar li::before {
+            content: "";
+            position: absolute;
+            height: 33.33%;
+            width: 0;
+            background-color: #077b8a;
+            right: 0;
+            z-index: 0;
+            top: 33.33%;
+            transition: all 0.5s;
+        }
+
+        .navbar li::after {
+            content: "";
+            position: absolute;
+            height: 33.33%;
+            width: 0;
+            background-color: #077b8a;
+            left: 0;
+            z-index: 0;
+            bottom: 0;
+            transition: all 0.5s;
+        }
+
+        .navbar a::before {
+            position: absolute;
+            content: "";
+            height: 33.33%;
+            width: 0;
+            background-color: #077b8a;
+            bottom: 66.66%;
+            left: 0;
+            transition: all 0.5s;
+
+        }
+
+        .navbar li:hover:before,
+        .navbar li:hover::after,
+        .navbar li:hover a::before {
+            width: 100%;
+        }
+    </style>
+
+
+
+</head>
+<div class="navbar">
+    <nav>
+        <ul>
+            <li>
+                <a href="firstpage.html" style="font-family:  'Marck Script', cursive;">Carepoint</a>
+            </li>
+            <li>
+                <a href="skincare.html">Skin Care</a>
+            </li>
+            <li>
+                <a href="haircare.html">Hair Care</a>
+            </li>
+            <li>
+                <a href="oralcare.html">Oral Care</a>
+            </li>
+            <li>
+                <a href="mensgrooming.html">Mens Grooming</a>
+            </li>
+            <li>
+                <a href="sexualwellness.html">Sexual Wellness</a>
+            </li>
+            <li>
+                <a href="adultdiapers.html">Adult Diapers</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+
+
+<body>
+    <ul id="autoWidth" class="cs-hidden">
+        <li class="item-a">
+            <div class="box">
+                <div class="slider">
+                    <img src="photos/personal_care/Lakme 9 to 5 Primer+ Matte Foundation, 9 gm.jpg" alt="">
+                    <div class="buy">
+                        <a href="Personal Care/Skin Care/Lakme_9_to_5_Primer+_Matte_Foundation,_9_gm.html"
+                            class="button">read more</a>
+                    </div>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Lakme 9 to 5 Primer+ Matte Foundation, 9 gm</a>
+                        <span>Skin Care</span>
+                    </div>
+                    <a href="#" class="price">Rs.155</a>
+                </div>
+            </div>
+        </li>
+
+        <li class="item-b">
+            <div class="box">
+                <div class="slider">
+                    <img src="photos/personal_care/himalaya_purifying_neem_face_wash_50_ml_0_1.jpg" alt="">
+                    <div class="buy">
+                        <a href="Personal Care/Skin Care/Himalaya_Purifying_Neem_Face_Wash,_50_ml.html"
+                            class="button">read more</a>
+                    </div>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Himalaya Purifying Neem Face Wash, 50 ml</a>
+                        <span>Skin care</span>
+                    </div>
+                    <a href="#" class="price">Rs.140</a>
+                </div>
+            </div>
+        </li>
+        <li class="item-c">
+            <div class="box">
+                <div class="slider">
+                    <img src="photos/personal_care/Vaseline Original Pure Skin Jelly, 100 ml.jpg" alt="">
+                    <div class="buy">
+                        <a href="Personal Care/Skin Care/Vaseline_Original_Pure_Skin_Jelly,_100_ml.html"
+                            class="button">read more</a>
+                    </div>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Vaseline Original Pure Skin Jelly, 100 ml</a>
+                        <span>Skin Care</span>
+                    </div>
+                    <a href="#" class="price">Rs.185</a>
+                </div>
+            </div>
+        </li>
+        <li class="item-d">
+            <div class="box">
+                <div class="slider">
+                    <img src="photos/personal_care/40013501_3-himalaya-wellness-footcare-cream.jpg" alt="">
+                    <div class="buy">
+                        <a href="Personal Care/Skin Care/Himalaya_Footcare_Cream,_20_gm.html" class="button">read
+                            more</a>
+                    </div>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Himalaya Footcare Cream, 20 gm</a>
+                        <span>Skin Care</span>
+                    </div>
+                    <a href="#" class="price">Rs.149</a>
+                </div>
+            </div>
+        </li>
+        <li class="item-d">
+            <div class="box">
+                <div class="slider">
+                    <img src="photos/personal_care/Apollo Life Hand Sanitizer Liquid Spray, 500 ml.jpg" alt="">
+                    <div class="buy">
+                        <a href="Personal Care/Skin Care/Apollo_Life_Hand_Sanitizer_Spray,_100_ml.html"
+                            class="button">read more</a>
+                    </div>
+                </div>
+                <div class="detail-box">
+                    <div class="type">
+                        <a href="#">Apollo Life Hand Sanitizer Spray, 500 ml</a>
+                        <span>Skin Care</span>
+                    </div>
+                    <a href="#" class="price">Rs.149</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <script type="text/javascript" src="javascript/script.js"></script>
+
+    <div class="cursor"></div>
+</body>
+<script src="javascript/cursor.js"></script>
+
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Anti Malarials</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <script src="hhttps://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<style>
+    body {
+        background-color: rgb(220, 248, 248);
+    }
+
+    .card {
+        border: none;
+        overflow: hidden
+    }
+
+    .hover14 figure {
+        position: relative;
+    }
+
+    .hover14 figure::before {
+        position: absolute;
+        top: 0;
+        left: -75%;
+        z-index: 2;
+        display: block;
+        content: '';
+        width: 50%;
+        height: 100%;
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(233, 13, 13, 0.3) 100%);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(26, 162, 196, 0.5) 100%);
+        -webkit-transform: skewX(-25deg);
+        transform: skewX(-25deg);
+    }
+
+    .hover14 figure:hover::before {
+        -webkit-animation: shine .75s;
+        animation: shine .75s;
+    }
+
+    @-webkit-keyframes shine {
+        100% {
+            left: 125%;
+        }
+    }
+
+    @keyframes shine {
+        100% {
+            left: 125%;
+        }
+    }
+
+    .thumbnail_images ul {
+        background-color: whitesmoke;
+        list-style: none;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-top: 10px
+    }
+
+    .thumbnail_images ul li {
+        background-color: whitesmoke;
+        margin: 5px;
+        padding: 10px;
+        border: 2px solid #eee;
+        cursor: pointer;
+        transition: all 0.5s
+    }
+
+    .thumbnail_images ul li:hover {
+        border: 2px solid #000
+    }
+
+    .main_image {
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #eee;
+        height: 400px;
+        width: 100%;
+        overflow: hidden
+    }
+
+    .heart {
+        height: 29px;
+        width: 29px;
+        background-color: #eaeaea;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    .content p {
+        background-color: whitesmoke;
+        font-size: 12px
+    }
+
+    .ratings span {
+        font-size: 14px;
+        margin-left: 12px
+    }
+
+    .colors {
+        margin-top: 5px
+    }
+
+    .colors ul {
+        list-style: none;
+        display: flex;
+        padding-left: 0px
+    }
+
+    .colors ul li {
+
+        height: 20px;
+        width: 20px;
+        display: flex;
+        border-radius: 50%;
+        margin-right: 10px;
+        cursor: pointer
+    }
+
+
+    .right-side {
+        position: relative
+    }
+</style>
+
+<body>
+    <div class="container mt-5 mb-5">
+        <div class="card">
+            <div class="row g-0">
+                <div class="col-md-6 border-end">
+                    <div class="d-flex flex-column justify-content-center">
+                        <div class="main_image">
+                            <div class="hover14 column">
+                                <figure><img src="../../photos/medicine/Malirid.png" alt="one" id="main_product_image"
+                                        width="350"></figure>
+                            </div>
+                        </div>
+                        <div class="thumbnail_images">
+                            <ul id="thumbnail">
+                                <li><img onclick="changeImage(this)" src="../../photos/medicine/Malirid_back.png"
+                                        alt="two" width="70">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-3 right-side">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3>Malirid-DS Tablet</h3>
+                        </div>
+                        <div class="mt-2 pr-3 content">
+                            <ul>
+                                <b>Manufacturer</b>
+                                <li>Ipca Laboratories Ltd</li>
+                                <b>SALT COMPOSITION</b>
+                                <li>Primaquine (15mg)</li>
+                                <b>STORAGE</b>
+                                <li>Store below 30°C</li>
+                            </ul>
+
+                        </div>
+                        <p>
+                        <h4><b>INTRODUCTION<br></b></h4>
+                        <b>Description</b><br>
+                        Malirid-DS Tablet is an antiparasitic medicine, used for the prevention and treatment of
+                        malaria. It works by killing the malaria-causing parasites and stops the infection from
+                        spreading.<br><br>
+
+                        Malirid-DS Tablet should be used in the dose and duration as advised by your doctor. Take it
+                        with food to decrease the risk of stomach upset. Do not skip any doses and finish the full
+                        course of treatment even if you feel better. Stopping it early can result in treatment failure
+                        and increase the side effects too. Do not take a double dose to make up for a missed dose.
+                        Simply take the next dose as planned.<br><br>
+
+                        Take measures to reduce the chance of being bitten by mosquitoes like using insect repellent
+                        creams on parts of your body, not covered by clothing. Spray mosquito repellent to kill any
+                        mosquitoes that may have entered rooms despite screening. Wear light-colored and covered
+                        clothing when you are outside after sunset.<br><br>
+                        <b>USES OF MALIRID TABLET</b> <br>
+                        Malaria<br><br>
+
+                        <b>Key Benefits<br></b>
+                        In Malaria<br>
+                        Malirid-DS Tablet is an antimalarial medicine and is used to treat malaria, a serious or
+                        life-threatening illness that is spread by a parasite that enters the human body by the bite of
+                        infected mosquitoes. It kills the infection-causing parasite and stops the further spread of the
+                        infection. Take it only as prescribed and refrain from taking any other medicines along with
+                        this medicine (unless advised by the doctor) as they may affect the absorption of this medicine.
+                        Do not use this medicine for treating any other condition without consulting your doctor.
+                        <br><br>
+
+                        <b>Common side effects of Malirid</b>
+                        <li>Rash</li>
+                        <li>Vomiting</li>
+                        <li>Headache</li>
+                        <li>Dizziness</li>
+                        <li>Hives</li>
+                        <li>Stomach pain</li>
+                        <li>Nausea</li>
+                        <li>Abdominal pain</li>
+                        <li>Itching</li>
+                        <li>Heartburn</li>
+                        <li>Gastrointestinal discomfort</li>
+                        <li>Upper abdominal pain</li> <br>
+
+                        <b>Directions for Use<br></b>
+                        Take this medicine in the dose and duration as advised by your doctor. Swallow it as a whole. Do
+                        not chew, crush or break it. Malirid-DS Tablet is to be taken with food.<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cursor"></div>
+    <script>
+        function changeImage(element) {
+
+            var main_prodcut_image = document.getElementById('main_product_image');
+            main_prodcut_image.src = element.src;
+
+
+        }
+    </script>
+    <script src="javascript/cursor.js"></script>
+
+</body>
+
+</html>

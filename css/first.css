@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'M PLUS 1', sans-serif;
+    box-sizing: border-box;
+}
+
+.card {
+    font-size: 1.3rem;
+    background: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+  }
+  
+  .main-header {
+    height: 25vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .main-header h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+  }
+  
+  img {
+    width: 100%;
+  }
+  .img1{
+      margin-top: 35px;
+      margin-left: 20px;
+  }
+.img2{
+    margin-top: 50px;
+    margin-left: -20px;
+}
+.img3{
+    margin-top: 35px;
+    margin-left: 20px;
+}
+.img4{
+    margin-top: 20px;
+    margin-left: -20px;
+}
+  
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    background: #f1f1f1;
+    margin-bottom: 2rem;
+  }
+  
+  .card h3 {
+    margin-bottom: 2rem;
+  }
+  
+  .card img {
+    height: 400px;
+  }
+  
+  .card > div {
+    padding: 2rem;
+  }
+  
+  .card:nth-child(even) img {
+    order: 2;
+  }
+  
+  
+  .btn {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  @media(max-width:600px) {
+    .card {
+      display: block;
+    }
+    .img1{
+        margin-top: 0;
+        margin-left: 0;
+    }
+  .img2{
+      margin-top: 0;
+      margin-left: 0;
+  }
+  .img3{
+      margin-top: 0;
+      margin-left: 0;
+  }
+  .img4{
+      margin-top: 0;
+      margin-left: 0;
+  }
+  }
+  
+
+
+
+.backgroundcolor {
+    background-color: rgb(80, 212, 245);
+    border-radius: 30px;
+
+}
+
+.nav-item:hover {
+    background-color: rgb(101, 185, 206);
+    font-weight: 500;
+}
+
+.btncolor {
+    background-color: black;
+}
+
+
+.copy {
+    background-color: gray;
+    color: black;
+}
+
+.container8 {
+    display: flex;
+    background-color: black;
+    color: #f9ca24;
+}
+
+.contact-us {
+    background-color: rgb(163, 213, 241);
+    width: 50%;
+    padding: 2%;
+    font-weight: bold;
+}
+
+.about-us {
+    width: 50%;
+    padding: 1%;
+}
+.container8 {
+  display: flex;
+  background-color: rgb(163, 213, 241);
+  color: black;
+}
+.bgofcontact{
+    background-color: rgb(163, 213, 241);
+}
+
+.social-icon1 {
+  color: blue;
+}
+
+.social-icon2 {
+    color: red;
+}
+
+.social-icon3 {
+  color: orangered;
+}
+.text1{
+    text-align: center;
+}
+
+
+@media (max-width: 800px) {
+  .container8 {
+    display: block;
+    font-size: 1.1rem;
+  }
+
+  .contact-us,
+  .about-us {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+    .container8 {
+        display: block;
+        font-size: 1.1rem;
+    }
+
+    .contact-us,
+    .about-us {
+        width: 100%;
+    }
+}
+
+.seeall{
+    display: flex;
+    justify-content: right;
+    font-size: 1.3rem;
+    
+}
+.seeall a{
+    text-decoration: none;
+    color: black;
+    margin-right: 2%;
+    margin-top: -2%;
+}
+
+.firstdis span{
+    animation: underline 2s ease-in-out infinite;
+}
+
+@keyframes underline {
+    from {
+    }
+    to {
+    }
+  }

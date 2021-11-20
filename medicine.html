@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <script src="javascript/medicine.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap');
+
+        * {
+            font-family: 'M PLUS 1', sans-serif;
+        }
+
+        body {
+            background-color: #dcf8f8;
+        }
+
+        .topic {
+            margin-left: 30px;
+            display: grid;
+            background-color: rgb(154, 255, 154);
+            width: 350px;
+            font-size: 18px;
+            height: 400px;
+        }
+
+        section {
+            display: flex;
+            height: 525px;
+        }
+
+        .three {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+        }
+
+        #AntiDiabetic1,
+        #AntiMalarials1,
+        #Hormones1,
+        #Ophthal1,
+        #Vitamins1,
+        #BloodRelated1 {
+            display: none;
+            color: red;
+        }
+
+        .types {
+            margin-bottom: 20px;
+            border: 0px;
+            background-color: rgb(154, 255, 154);
+            margin-top: 10px;
+        }
+
+        .types:hover {
+            background-color: rgb(96, 212, 96);
+            font-size: 18px;
+        }
+
+        .two {
+            margin-left: 60px;
+            margin-bottom: 20px;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .three:hover+.hide {
+            display: block;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .backgroundcolor {
+            background-color: rgb(80, 212, 245);
+            border-radius: 30px;
+
+        }
+
+        .nav-item:hover {
+            background-color: rgb(82, 163, 184);
+            font-weight: 500;
+        }
+
+        #HumanInsulinBasal1,
+        #InsulinAnaloguesBasal1,
+        #OtherAntiMalarials1,
+        #Acth1,
+        #AnabolicHormonesSystemic1,
+        #GrowthHormones1,
+        #ArticificialTears1,
+        #BComplex1,
+        #CalciumProducts1,
+        #OtherNutrients1,
+        #OtherVitamins1,
+        #Dextran1,
+        #IronChelatingAgents1,
+        #ErythropoietinProducts1 {
+            display: none;
+        }
+
+        .sub {
+            margin-left: 50px;
+        }
+
+        .descr {
+            width: 450px;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #c7e8e8e3;
+            border-radius: 20px;
+        }
+
+        .descr:hover {
+            box-shadow: 1px 1px 7px black;
+
+        }
+
+        a p strong {
+            color: black;
+        }
+    </style>
+</head>
+<div class="cursor"></div>
+
+<body>
+
+    <!-- navbar -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light backgroundcolor">
+        <div class="container-fluid backgroundcolor">
+            <a class="navbar-brand ms-1 fs-3" href="firstpage.html"
+                style="font-family:  'Marck Script', cursive;">Carepoint</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-lg-0 fs-5">
+                    <li class="nav-item me-1">
+                        <a class="nav-link active" aria-current="page" href="firstpage.html">Diseases</a>
+                    </li>
+                    <li class="nav-item me-1">
+                        <a class="nav-link " href="home_essential.html">Home Essentials</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Personal care
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="skincare.html">Skin care</a></li>
+                            <li><a class="dropdown-item" href="haircare.html">Hair care</a></li>
+                            <li><a class="dropdown-item" href="oralcare.html">Oral care</a></li>
+                            <li><a class="dropdown-item" href="mensgrooming.html">Mens Grooming</a></li>
+                            <li><a class="dropdown-item" href="sexualwellness.html">Sexual wellness</a></li>
+                            <li><a class="dropdown-item" href="adultdiapers.html">Adult diapers</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="mt-2">
+
+        <div class="topic me-5 mt-2 border-0">
+            <button id="AntiDiabetic" class="types " onclick="myFunction()">Anti
+                Diabetic <span class="me-1"></span><i class="fas fa-chevron-right "></i>
+            </button>
+            <button id="AntiMalarials" class="types" onclick="myFunction1()">Anti
+                Malarials <span class="me-1"></span><i class="fas fa-chevron-right "></i>
+            </button>
+            <button id="Hormones" class="types" onclick="myFunction2()">
+                Hormones <span class="me-1"></span><i class="fas fa-chevron-right "></i>
+            </button>
+            <button id="Vitamins" class="types" onclick="myFunction4()">
+                Vitamins Minerals Nutrients <span class="me-1"></span><i class="fas fa-chevron-right "></i>
+            </button>
+            <button id="BloodRelated" class="types" onclick="myFunction5()">
+                Blood Related <span class="me-1"></span><i class="fas fa-chevron-right "></i>
+            </button>
+        </div>
+
+
+        <!--  -->
+        <!--  -->
+        <div id="main" class="two mt-3">
+
+            <div id="AntiDiabetic1">
+                <div class="d-flex">
+                    <div class="three">
+                        <p id="HumanInsulinBasal" onmouseenter="function6()">Human Insulin Basal</p>
+                    </div>
+                    <i class="fas fa-chevron-right hide ms-2 mt-1"></i>
+                </div>
+                <div class="d-flex">
+                    <div class="three">
+                        <p id="InsulinAnaloguesBasal" onmouseenter="function8()">Insulin Analogues Basal</p>
+                    </div>
+                    <i class="fas fa-chevron-right hide ms-2 mt-1"></i>
+                </div>
+            </div>
+
+            <div id="AntiMalarials1">
+                <div class="d-flex">
+                    <div class="three">
+                        <p id="OtherAntiMalarials" onmouseenter="function9()">Other Anti Malarials</p>
+                    </div>
+                    <i class="fas fa-chevron-right hide ms-2 mt-1"></i>
+                </div>
+            </div>
+
+            <div id="Hormones1">
+                <div class="d-flex">
+                    <div class="three">
+                        <p id="Acth" onmouseenter="function10()">Acth</p>
+                    </div>
+                    <i class="fas fa-chevron-right hide ms-2 mt-1"></i>
+                </div>
+                <div class="d-flex">
+                    <div class="three">
+                        <p id="AnabolicHormonesSystemic" onmouseenter="function11()">Anabolic Hormones Systemic</p>
+                    </div>
+                    <i class="fas fa-chevron-right hide ms-2 mt-1"></i>
+                </div>
+                <div class="d-flex">
+                    <div class="three">
+                        <p id="GrowthHormones" onmouseenter="function12()">Growth Hormones</p>
+                    </div>
+                    <i class="fas fa-chevron-right hide ms-2 mt-1"></i>
+                </div>
+            </div>
+
+            <div id="Vitamins1">
+                <div class="d-flex">
+                    <div class="three">
+                        <p id="BComplex" onmouseenter="function16()">B Complex</p>
+                    </div>
+                    <i class="fas fa-chevron-right hide ms-2 mt-1"></i>
+                </div>
+                <div class="d-flex">
+                    <div class="three">
+                        <p id="CalciumProducts" onmouseenter="function17()">Calcium Products</p>
+                    </div>
+                    <i class="fas fa-chevron-right hide ms-2 mt-1"></i>
+                </div>
+                <div class="d-flex">
+                    <div class="three">
+                        <p id="OtherNutrients" onmouseenter="function18()">Other Nutrients</p>
+                    </div>
+                    <i class="fas fa-chevron-right hide ms-2 mt-1"></i>
+                </div>
+                <div class="d-flex">
+                    <div class="three">
+                        <p id="OtherVitamins" onmouseenter="function19()">Other Vitamins</p>
+                    </div>
+                    <i class="fas fa-chevron-right hide ms-2 mt-1"></i>
+                </div>
+            </div>
+
+            <div id="BloodRelated1">
+                <div class="d-flex">
+                    <div class="three">
+                        <p id="Dextrans" onmouseenter="function20()">Dextrans</p>
+                    </div>
+                    <i class="fas fa-chevron-right hide ms-2 mt-1"></i>
+                </div>
+                <div class="d-flex">
+                    <div class="three">
+                        <p id="IronChelatingAgents" onmouseenter="function21()">Iron Chelating Agents</p>
+                    </div>
+                    <i class="fas fa-chevron-right hide ms-2 mt-1"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <!--  -->
+        <!--  -->
+        <div class="sub mt-2 ">
+            <div id="AntiDiabetic2">
+                <div id="HumanInsulinBasal1">
+                    <div class="border-1 border descr">
+                        <a href="medicines/Anti_diabetic/Human_Insulatard.html">
+                            <p><strong>Human Insulatard 40IU/ml Suspension for Injection</strong></p>
+                        </a>
+                        <p>vial of 10 ml Suspension for injection</p>
+                        <p> Novo Nordisk India Pvt LTD</p>
+                        <p> Insulin Isophane (40IU)</p>
+                    </div>
+                    <div class="border-1 border descr">
+                        <a href="medicines/Anti_diabetic/Insulatard_Flexpen.html">
+                            <p><strong>Insulatard 100IU/ml Flexpen</strong></p>
+                        </a>
+                        <p>flexpen of 3 ml Suspension for Injection</p>
+                        <p> Novo Nordisk India Pvt LTD</p>
+                        <p> Insulin Isophane (100IU/ml)</p>
+                    </div>
+                    <div class="border-1 border descr">
+                        <a href="medicines/Anti_diabetic/Lupisulin_Injection.html">
+                            <p><strong>Lupisulin N 100IU/ml Injection</strong></p>
+                        </a>
+                        <p>cartridge of 3ml Injection</p>
+                        <p> Lupin LTD</p>
+                        <p> Insulin Isophane (100IU)</p>
+                    </div>
+                </div>
+
+
+                <div id="InsulinAnaloguesBasal1">
+                    <div class="border-1 border descr">
+                        <a href="medicines/Anti_diabetic/Lantus_injection.html">
+                            <p><strong>Lantus 100IU/ml Solution for Injection</strong></p>
+                        </a>
+                        <p>vial of 10 ml Suspension for injection</p>
+                        <p> Sanofi India Pvt LTD</p>
+                        <p> Insulin Glargine (100IU)</p>
+                    </div>
+                    <div class="border-1 border descr">
+                        <a href="medicines/Anti_diabetic/Toujeo_Solostar.html">
+                            <p><strong>Toujeo 300 U/mL Solostar</strong></p>
+                        </a>
+                        <p>Pre-filled pen of 1 Solution for Injection</p>
+                        <p> Sanofi India Pvt LTD</p>
+                        <p> Insulin Glargine (300IU/ml)</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--  -->
+            <!--  -->
+            <div id="OtherAntiMalarials1">
+                <div class="border-1 border descr">
+                    <a href="medicines/Anti_malarials/Lumerax_80_Tablet.html">
+                        <p><strong>Lumerax 80 Tablet</strong></p>
+                    </a>
+                    <p> Ipca Laboratories LTD</p>
+                    <p> Artemether (80mg) + Lumefantrine (480mg)</p>
+                </div>
+                <div class="border-1 border descr">
+                    <a href="medicines/Anti_malarials/Malirid-DS_Tablet.html">
+                        <p><strong>Malirid-DS Tablet</strong></p>
+                    </a>
+                    <p> Ipca Laboratories LTD</p>
+                    <p> Primaquine (15mg)</p>
+                </div>
+                <div class="border-1 border descr">
+                    <a href="medicines/Anti_malarials/Synriam_Tablet.html">
+                        <p><strong>Synriam 150/750mg Tablet</strong></p>
+                    </a>
+                    <p> Sun Pharmaceutical Industries Ltd</p>
+                    <p> Arterolane (150mg) + Piperaquine (750mg)</p>
+                </div>
+            </div>
+
+
+            <!--  -->
+            <!--  -->
+            <div id="Hormones2">
+                <div id="Acth1">
+                    <div class="border-1 border descr">
+                        <a href="medicines/Hormones/Acton_Prolongatum.html">
+                            <p><strong>Acton Prolongatum 60IU Injection</strong></p>
+                        </a>
+                        <p>vial of 5 ml injection</p>
+                        <p> Ferring Pharmaceuticals</p>
+                        <p> Corticotropin (60IU)</p>
+                    </div>
+                    <div class="border-1 border descr">
+                        <a href="medicines/Hormones/Acton_60IU.html">
+                            <p><strong>Action 60Iu Injection</strong></p>
+                        </a>
+                        <p>vial of 5 ml injection</p>
+                        <p> Ferring Pharmaceuticals</p>
+                        <p> Corticotropin (60IU)</p>
+                    </div>
+                </div>
+
+
+                <div id="AnabolicHormonesSystemic1">
+                    <div class="border-1 border descr">
+                        <a href="medicines/Hormones/Deca_Durabolin.html">
+                            <p><strong>Deca-Durabolin 50 Injection</strong></p>
+                        </a>
+                        <p>Ampoule of 1ml injection</p>
+                        <p> Organon (India) LTD</p>
+                        <p> Nandrolone Decanoate (50mg)</p>
+                    </div>
+                    <div class="border-1 border descr">
+                        <a href="medicines/Hormones/menabol.html">
+                            <p><strong>Menabol Tablet</strong></p>
+                        </a>
+                        <p> Oaknet Healthcare Pvt LTD</p>
+                        <p> Stanozolol (2mg)</p>
+                    </div>
+                </div>
+
+
+                <div id="GrowthHormones1">
+                    <div class="border-1 border descr">
+                        <a href="medicines/Hormones/Regen_d.html">
+                            <p><strong>Regen-D 150 Gel</strong></p>
+                        </a>
+                        <p>Tube of 15 gm Gel</p>
+                        <p> Bharat Biotech</p>
+                        <p> Recombinant Human Epidermal Growth Factor(150mcg/gm)</p>
+                    </div>
+                    <div class="border-1 border descr">
+                        <a href="medicines/Hormones/slavrgen.html">
+                            <p><strong>Slvrgen Cream</strong></p>
+                        </a>
+                        <p>Tube of 15 gm Cream</p>
+                        <p> Bharat Biotech</p>
+                        <p> Recombinant Human Epidermal Growth Factor(10mcg)</p>
+                    </div>
+                    <div class="border-1 border descr">
+                        <a href="medicines/Hormones/Healace.html">
+                            <p><strong>healace Gel</strong></p>
+                        </a>
+                        <p>Tube of 15 gm Gel</p>
+                        <p> Virchow Biotech Pvt LTD</p>
+                        <p> Recombinant Human Epidermal Growth Factor(10mcg)</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--  -->
+            <!--  -->
+            <div id="Vitamins2">
+                <div id="BComplex1">
+                    <div class="border-1 border descr">
+                        <a href="medicines/Vitamins/Optineuron_Injection.html">
+                            <p><strong>Optineuron Injection</strong></p>
+                        </a>
+                        <p>ampoule of 3 ml injection</p>
+                        <p> Lupin LTD</p>
+                        <p> Thiamine (vitamin B1) (100mg)</p>
+                    </div>
+                    <div class="border-1 border descr">
+                        <a href="medicines/Vitamins/Vitcofol_Injection.html">
+                            <p><strong>Vitcofol Injection</strong></p>
+                        </a>
+                        <p>Vial of 10 ml Injection</p>
+                        <p> FDC LTD</p>
+                        <p> Nicotinamide (200mg/ml)</p>
+                    </div>
+                </div>
+
+
+                <div id="CalciumProducts1">
+                    <div class="border-1 border descr">
+                        <a href="medicines/Vitamins/Calcium_Sandoz.html">
+                            <p><strong>Calcium Sandoz Injection</strong></p>
+                        </a>
+                        <p>vial of 10 ml injection</p>
+                        <p> Novartis India Ltd</p>
+                        <p> Calcium Gluconate (50mg)</p>
+                    </div>
+                    <div class="border-1 border descr">
+                        <a href="medicines/Vitamins/Osteofit-HD.html">
+                            <p><strong>Osteofit-HD Tablet</strong></p>
+                        </a>
+                        <p> Alembic Pharmaceuticals LTD</p>
+                        <p> Calcium Carbonate (1250mg)</p>
+                    </div>
+                    <div class="border-1 border descr">
+                        <a href="medicines/Vitamins/Calcimax.html">
+                            <p><strong>Calcimax ISO Capsule</strong></p>
+                        </a>
+                        <p> Meyer Organics Pvt LTD</p>
+                        <p> Calcium Carbonate (500mg)</p>
+                    </div>
+                </div>
+
+
+                <div id="OtherNutrients1">
+                    <div class="border-1 border descr">
+                        <a href="medicines/Vitamins/Nurokind-LC.html">
+                            <p><strong>Nurokind-LC Tablet</strong></p>
+                        </a>
+                        <p> Mankind pharma LTD</p>
+                        <p> Levo-carnitine (500mg)</p>
+                    </div>
+                    <div class="border-1 border descr">
+                        <a href="medicines/Vitamins/Evion.html">
+                            <p><strong>Evion LC Tablet</strong></p>
+                        </a>
+                        <p> Merck LTD</p>
+                        <p>Levo-carnitine (150mg) </p>
+                    </div>
+                    <div class="border-1 border descr">
+                        <a href="medicines/Vitamins/Heptral.html">
+                            <p><strong>Heptral 400mg Tablet</strong></p>
+                        </a>
+                        <p>Abbott</p>
+                        <p> Ademetionine (400mg)</p>
+                    </div>
+                </div>
+
+
+                <div id="OtherVitamins1">
+                    <div class="border-1 border descr">
+                        <a href="medicines/Vitamins/Uprise-D3 .html">
+                            <p><strong>Uprise-D3 60K Capsule</strong></p>
+                        </a>
+                        <p> Alkem Laboratories Ltd</p>
+                        <p> Vitamin D3 (60000IU)</p>
+                    </div>
+                    <div class="border-1 border descr">
+                        <a href="medicines/Vitamins/Aquasol.html">
+                            <p><strong>Aquasol A Capsule</strong></p>
+                        </a>
+                        <p> USV LTD</p>
+                        <p> Vitamin A (25000IU)</p>
+                    </div>
+                    <div class="border-1 border descr">
+                        <a href="medicines/Vitamins/Vitamin_a.html">
+                            <p><strong>Vitamin A Chewable Tablet</strong></p>
+                        </a>
+                        <p> Abbott</p>
+                        <p> Vitamin A (50000IU)</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--  -->
+            <!--  -->
+            <div id="BloodRelated2">
+                <div id="Dextran1">
+                    <div class="border-1 border descr">
+                        <a href="medicines/Blood_related/Alburel.html">
+                            <p><strong>Alburel 20gm Solution for Infusion</strong></p>
+                        </a>
+                        <p>Bottle of 100ml Injection</p>
+                        <p> Reliance Life Sciences</p>
+                        <p> Albumin (20%)</p>
+                    </div>
+                    <div class="border-1 border descr">
+                        <a href="medicines/Blood_related/Human_Albumin.html">
+                            <p><strong>Human Albumin Infusion</strong></p>
+                        </a>
+                        <p>Bottle of 100ml infusion</p>
+                        <p> Bharat Serums & Vaccines Ltd</p>
+                        <p> Albumin (20%)</p>
+                    </div>
+                </div>
+
+
+                <div id="IronChelatingAgents1">
+                    <div class="border-1 border descr">
+                        <a href="medicines/Blood_related/Desirox.html">
+                            <p><strong>Desirox 500 Tablet</strong></p>
+                        </a>
+                        <p> Cipla Ltd</p>
+                        <p> Deferasirox (500mg)</p>
+                    </div>
+                    <div class="border-1 border descr">
+                        <a href="medicines/Blood_related/Desferal.html">
+                            <p><strong>Desferal 500mg Injection</strong></p>
+                        </a>
+                        <p> Novartis India Ltd</p>
+                        <p> Deferasiroxamine (500mg)</p>
+                    </div>
+                    <div class="border-1 border descr">
+                        <a href="medicines/Blood_related/Kelfer.html">
+                            <p><strong>Kelfer 500 Capsule</strong></p>
+                        </a>
+                        <p> Cipla LTD</p>
+                        <p> Deferiprone (500mg)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="extra me-4" style="display: flex; justify-content: space-between;">
+        <div class="firstvideo">
+            <p class="mt-5 ms-4 fw-bold fs-5">WHO: How to give a safe injection? </p>
+            <video width="450" controls class=" ms-4">
+                <source src="photos/WHO_ How to give a safe injection_.mp4" type="video/mp4">
+                <source src="mov_bbb.ogg" type="video/ogg">
+                Your browser does not support HTML video.
+            </video>
+
+        </div>
+        <div class="firstvideo">
+            <p class="mt-5 ms-4 fw-bold fs-5">How the Body Absorbs and Uses Medicine</p>
+            <video width="450" controls class=" ms-4">
+                <source src="photos/How_body_absorb_medicines.mp4" type="video/mp4">
+                <source src="mov_bbb.ogg" type="video/ogg">
+                Your browser does not support HTML video.
+            </video>
+        </div>
+        <div class="firstvideo">
+            <p class="mt-5 ms-4 fw-bold fs-5">What is Medicine? </p>
+            <video width="450" controls class=" ms-4">
+                <source src="photos/What is Medicine.mp4" type="video/mp4">
+                <source src="mov_bbb.ogg" type="video/ogg">
+                Your browser does not support HTML video.
+            </video>
+        </div>
+
+    </div>
+
+</body>
+
+<script src="javascript/cursor.js"></script>
+
+
+</html>

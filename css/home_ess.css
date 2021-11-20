@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap');
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(220,248,248);
+  font-family: 'M PLUS 1', sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  /* border: 2px solid black; */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif
+}
+
+body {
+  min-height: 100vh;
+}
+
+.container {
+  transform-style: preserve-3d
+}
+
+.container .box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  /* margin: 20px; */
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  cursor: pointer;
+  border: 1px solid rgb(163, 162, 162);
+}
+
+.container .box .body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition:1s ease
+}
+
+.container .box .body .imgContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+
+}
+
+.container .box .body .imgContainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+
+.container .box .body .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg)
+}
+
+.container .box:hover .body {
+  transform: rotateY(180deg);    
+}
+
+.container .box .body .content div {
+  transform-style: preserve-3d;
+  padding: 20px;
+  background: linear-gradient(90deg,#ffd166 ,#06d6a0   );
+  transform: translateZ(100px)
+}
+
+.container .box .body .content div h3 {
+  letter-spacing: 1px
+}
+
+.nav-item:hover {
+background-color: rgb(101, 185, 206);
+font-weight: 500;
+}
+
+.backgroundcolor {
+background-color: rgb(80, 212, 245);
+border-radius: 30px;
+}
+
+/* i{
+  animation: itag 2s infinite;
+}
+@keyframes itag {
+  from {
+    color: red;
+  }
+  to {
+    color: black;
+  }
+} */

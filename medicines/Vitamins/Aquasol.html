@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en">
+
+<head>
+    <title>Vitamins</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <script src="hhttps://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="../../css/style.css">
+
+</head>
+<div class="cursor"></div>
+
+<style>
+    body {
+        background-color: rgb(220, 248, 248);
+    }
+
+    .card {
+        border: none;
+        overflow: hidden
+    }
+
+    .hover14 figure {
+        position: relative;
+    }
+
+    .hover14 figure::before {
+        position: absolute;
+        top: 0;
+        left: -75%;
+        z-index: 2;
+        display: block;
+        content: '';
+        width: 50%;
+        height: 100%;
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(233, 13, 13, 0.3) 100%);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(26, 162, 196, 0.5) 100%);
+        -webkit-transform: skewX(-25deg);
+        transform: skewX(-25deg);
+    }
+
+    .hover14 figure:hover::before {
+        -webkit-animation: shine .75s;
+        animation: shine .75s;
+    }
+
+    @-webkit-keyframes shine {
+        100% {
+            left: 125%;
+        }
+    }
+
+    @keyframes shine {
+        100% {
+            left: 125%;
+        }
+    }
+
+    .thumbnail_images ul {
+        background-color: whitesmoke;
+        list-style: none;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-top: 10px
+    }
+
+    .thumbnail_images ul li {
+        background-color: whitesmoke;
+        margin: 5px;
+        padding: 10px;
+        border: 2px solid #eee;
+        cursor: pointer;
+        transition: all 0.5s
+    }
+
+    .thumbnail_images ul li:hover {
+        border: 2px solid #000
+    }
+
+    .main_image {
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #eee;
+        height: 400px;
+        width: 100%;
+        overflow: hidden
+    }
+
+    .heart {
+        height: 29px;
+        width: 29px;
+        background-color: #eaeaea;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    .content p {
+        background-color: whitesmoke;
+        font-size: 12px
+    }
+
+    .ratings span {
+        font-size: 14px;
+        margin-left: 12px
+    }
+
+    .colors {
+        margin-top: 5px
+    }
+
+    .colors ul {
+        list-style: none;
+        display: flex;
+        padding-left: 0px
+    }
+
+    .colors ul li {
+
+        height: 20px;
+        width: 20px;
+        display: flex;
+        border-radius: 50%;
+        margin-right: 10px;
+        cursor: pointer
+    }
+
+
+    .right-side {
+        position: relative
+    }
+</style>
+
+<body>
+    <div class="container mt-5 mb-5">
+        <div class="card">
+            <div class="row g-0">
+                <div class="col-md-6 border-end">
+                    <div class="d-flex flex-column justify-content-center">
+                        <div class="main_image">
+                            <div class="hover14 column">
+                                <figure><img src="../../photos/medicine/Aquasol.png" height="350px" width="250px"
+                                        alt="one" id="main_product_image" width="350"></figure>
+                            </div>
+                        </div>
+                        <div class="thumbnail_images">
+                            <ul id="thumbnail">
+                                <li><img onclick="changeImage(this)" src="../../photos/medicine/Aquasol.png" alt="two"
+                                        width="70">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-3 right-side">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3>Aquasol A Capsule</h3>
+                        </div>
+                        <div class="mt-2 pr-3 content">
+                            <ul>
+                                <b>Manufacturer</b>
+                                <li>UDV Ltd</li>
+                                <b>SALT COMPOSITION</b>
+                                <li>Vitamin A (25000IU)</li>
+                                <b>STORAGE</b>
+                                <li>Store below 30°C</li>
+                            </ul>
+                        </div>
+                        <p>
+                        <h4><b>INTRODUCTION<br></b></h4>
+                        <b>Description</b><br>
+                        Aquasol A Capsule is a medicine used in the treatment of vitamin A deficiency. It is an
+                        essential nutrient for the eyes and skin, and for normal growth. It also helps the heart, lungs,
+                        kidneys, and other organs function properly. <br><br>
+                        Aquasol A Capsule should be taken in the dose and duration as directed by your doctor. You
+                        should take it regularly and at a fixed time each day to get the most benefit from it. <br><br>
+
+                        <b>USES OF AQUASOL A CAPSULE</b> <br>
+                        <li>Treatment of Vitamin A deficiency</li><br><br>
+
+                        <b>Key Benefits<br></b>
+                        Aquasol A Capsule is a supplement of vitamin A. It is used to treat conditions caused by low
+                        levels of vitamin A in the body. Vitamin A is an essential nutrient that helps the body to
+                        perform various functions. Vitamin A is essential for good vision, healthy skin, cell growth,
+                        and a healthy immune system.<br><br>
+
+                        <b>Common side effects of Insulatard</b>
+                        <li>No common side effects seen</li><br>
+
+                        <b>Directions for Use<br></b>
+                        Take this medicine in the dose and duration as advised by your doctor. Aquasol A Capsule is to
+                        be taken with food. <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function changeImage(element) {
+
+            var main_prodcut_image = document.getElementById('main_product_image');
+            main_prodcut_image.src = element.src;
+
+
+        }
+    </script>
+</body>
+<script src="../../javascript/cursor.js"></script>
+
+
+</html>
